@@ -1,0 +1,41 @@
+<% include ./partials/header %>
+
+<style type="text/css">
+a{
+        color: blueviolet;
+}
+.flex{
+        display: flex;
+        margin-left: 150px;
+}
+</style>
+<h1 style="margin: 50px;text-align: center;">RESULT PAGE !!</h1>
+<div style="font-weight: 600; font-size: 30px; text-align: center;">
+    <%= College.name %>
+</div>
+<div>
+    <img src="<%= College.image %> " style="width:720px;height:300px;margin:30px 320px;border-style: solid;border-width: 10px;border-color: black;">
+</div>
+<div class="flex">
+<div style="margin:20px;">
+   <a href="<%= College.quora %>"> QUORA REVIEW </a> 
+</div>
+<div style="margin:20px;">
+        <a href="<%= College.Siksha %>"> SHIKSHA REVIEW </a> 
+</div>
+<div style="margin:20px;">
+        <a href="<%= College.career360 %>"> CAREER360 REVIEW </a> 
+</div>
+<div style="margin:20px;">
+        <a href="<%= College.Placement %>"> PLACEMENT</a> 
+</div>
+<div style="margin:20px;">
+        <a href="<%= College.Cultural_Soc %>"> CULTURAL SOCIETIES </a> 
+</div>
+<div style="margin:20px;">
+        <a href="<%= College.Technical_Soc %>"> TECHNICAL SOCIETIES </a> 
+</div>
+</div>
+
+
+<% include ./partials/footer %>

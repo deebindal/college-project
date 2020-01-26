@@ -1,0 +1,47 @@
+<% include ./partials/header %>
+
+<br>
+<div class="container" style="text-align: center">
+    <h1 class="white-text" >UPCOMING EVENTS</h1>
+    <a  href="/events/new" class="btn btn-large btn-default">ADD EVENT</a>
+</div>
+
+<br>
+<br>
+<br>
+<div class="container">
+        <div class="row" style="display: flex; flex-wrap: wrap">
+                <% Event.forEach(function(Event){ %>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="thumbnail thumbnailIndex width: 100% " style="padding: 0px" >
+                            <img src="<%= Event.image %>" alt="Image not available">
+                                <div class="caption">
+                                    <h3><%= Event.name %></h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Read More</a> <a href="#" class="btn btn-success" role="button">Enroll</a></p>
+                                    <div>
+                                    Venue : <%= Event.venue %>
+                                    </div>
+                                    <div>
+                                    Date : <%= Event.date %>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                <% }) %>
+        </div>
+            
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<% include ./partials/footer %>

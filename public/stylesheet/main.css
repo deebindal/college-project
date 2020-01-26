@@ -1,0 +1,16 @@
+html,
+body,
+#intro {
+    height: 100%;
+}
+body {
+    background :rgb(240, 9, 9);
+}
+
+#intro{
+    background: url("https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-sie: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
